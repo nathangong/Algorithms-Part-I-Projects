@@ -67,16 +67,4 @@ public class RedBlackBST<Key extends Comparable<Key>, Value> extends BST {
     public void delete(Comparable key) {
         throw new UnsupportedOperationException();
     }
-
-    public static void main(String[] args) {
-        BST<Integer, Integer> tree = new RedBlackBST<Integer, Integer>();
-        tree.put(9, 9);
-        tree.put(11, 11);
-        tree.put(1, 6);
-        tree.put(2, 2);
-        tree.put(100, 100);
-        tree.put(5, 5);
-        tree.delete(9);
-        System.out.println(tree.keys());
-    }
 }

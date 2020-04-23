@@ -135,14 +135,4 @@ public class Deque<Item> implements Iterable<Item> {
             public void remove() { throw new UnsupportedOperationException(); }
         };
     }
-
-    public static void main(String[] args) {
-        Deque<Integer> deque = new Deque<Integer>();
-        StdOut.println(deque.isEmpty());
-        StdOut.println(deque.size());
-        deque.addFirst(1);
-        deque.addLast(2);
-        StdOut.println(deque.removeFirst());
-        StdOut.println(deque.removeLast());
-    }
 }

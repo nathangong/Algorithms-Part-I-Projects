@@ -69,13 +69,4 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
             }
         };
     }
-
-    public static void main(String[] args) {
-        RandomizedQueue<Integer> queue = new RandomizedQueue<Integer>();
-        StdOut.println(queue.isEmpty());
-        StdOut.println(queue.size());
-        queue.enqueue(0);
-        queue.sample();
-        queue.dequeue();
-    }
 }
